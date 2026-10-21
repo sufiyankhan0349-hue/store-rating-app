@@ -1,0 +1,20 @@
+const { Pool } = require("pg");
+require("dotenv").config();
+
+const pool = new Pool({
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT || 5432,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
+
+// Small helper: write queries with ? and get back [rows]
+async function query(sql, params = []) {
+  let i = 0;
+  const text = sql.replace(/\?/g, () => "$" + ++i);
+  const result = await pool.query(text, params);
+  return [result.rows];
+}
+
+module.exports = { query };

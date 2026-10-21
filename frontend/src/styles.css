@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+nav { background: #1f3a5f; color: white; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin-right: 16px; text-decoration: none; }
+nav button { background: #e74c3c; }
+.container { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+.card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.auth-box { max-width: 420px; margin: 50px auto; }
+input, select, textarea { display: block; width: 100%; box-sizing: border-box; padding: 8px; margin: 6px 0 4px; border: 1px solid #bbb; border-radius: 4px; }
+button { background: #2d6cdf; color: white; border: none; padding: 8px 14px; border-radius: 4px; cursor: pointer; }
+.error { color: #c0392b; font-size: 13px; margin-bottom: 6px; }
+.success { color: #1e8449; font-size: 13px; margin-bottom: 6px; }
+.stats { display: flex; gap: 16px; }
+.stat { flex: 1; text-align: center; }
+.stat h2 { margin: 0; font-size: 32px; color: #2d6cdf; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e0e0e0; }
+th { cursor: pointer; background: #eef2f7; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.filters input, .filters select { flex: 1; min-width: 140px; }
+.row { display: flex; gap: 12px; }
+.row > div { flex: 1; }
